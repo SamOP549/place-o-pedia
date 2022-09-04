@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
 html,
 body {
@@ -19,44 +21,57 @@ a {
   box-sizing: border-box;
 }
 
-.button_box{
-    position: fixed; 
-    bottom:0%;
-    width:100%; 
-    opacity: 1;
-    left: 0;
+.button_box {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  opacity: 1;
+  left: 0;
 }
 
-.box{
+.box {
   left: 40vw;
 }
 
-.logo{
+.logo {
   height: 10rem;
 }
 
 @media screen and (max-width: 900px) {
-  .logo{
+  .logo {
     height: 8rem;
   }
 }
 
 @media screen and (max-width: 590px) {
-  .logo{
+  .logo {
     height: 6rem;
   }
 }
 
 @media screen and (max-width: 402px) {
-  .logo{
+  .logo {
     height: 5rem;
   }
 }
 
-.card{
+.card {
   height: 31rem;
 }
 
-.card_image{
+.card_image {
   height: 15rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Space Mono', monospace;
+}
+
+p {
+  font-family: 'Space Mono', monospace;
 }

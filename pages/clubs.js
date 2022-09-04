@@ -7,7 +7,7 @@ const clubs = () => {
         {
             image : '/cninjs.png',
             name: 'CODING NINJAS SRM',
-            domains: ["Corporate", "Creatives", "Editorials", "Sponsorship", "AI/ML", "Web & App Dev"],
+            domains: ["Corporate", "Creatives", "Editorials", "Sponsorship", "Technical(AI/ML, Web & App Dev)"],
             insta: "https://instagram.com/coding.ninjas_srm?igshid=YmMyMTA2M2Y="
         },
         {
@@ -75,7 +75,7 @@ const clubs = () => {
             <div className='flex align-center justify-start'>
                 <Link href='/'><img className='p-4' src="https://img.icons8.com/ios-filled/50/000000/long-arrow-left.png" /></Link>
             </div>
-            <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+            <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                 {
                     clubs.map((club, i) => {
                         return (
