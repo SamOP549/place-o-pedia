@@ -2,7 +2,7 @@ import React from 'react'
 import Card2 from '../components/Card2'
 import Link from 'next/link'
 
-const clubs = () => {
+const Clubs = () => {
     const clubs = [
         {
             image : '/cninjs.png',
@@ -73,13 +73,13 @@ const clubs = () => {
           `}
             </style>
             <div className='flex align-center justify-start'>
-                <Link href='/'><img className='p-4' src="https://img.icons8.com/ios-filled/50/000000/long-arrow-left.png" /></Link>
+                <Link href='/'><img className='p-4 cursor-pointer' src="https://img.icons8.com/ios-filled/50/000000/long-arrow-left.png" /></Link>
             </div>
             <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                 {
                     clubs.map((club, i) => {
                         return (
-                            <Card2 url={club.image} name={club.name} domains={club.domains} insta={club.insta}/>
+                            <Card2 key={i} url={club.image} name={club.name} domains={club.domains} insta={club.insta}/>
                         )
                     })
                 }
@@ -89,4 +89,4 @@ const clubs = () => {
     )
 }
 
-export default clubs
+export default Clubs

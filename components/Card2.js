@@ -15,7 +15,7 @@ const Card2 = (props) => {
                         {
                             props.domains.map(domain => {
                                 return (
-                                    <p className='text-white'>{domain}</p>
+                                    <p key={domain} className='text-white'>{domain}</p>
                                 )
                             })
                         }
